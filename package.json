@@ -1,0 +1,29 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "Implementation of various algorithms with typescript to study",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizdesign/algorithms.git"
+  },
+  "keywords": [
+    "algorithms",
+    "typescript"
+  ],
+  "author": "Kota, Luiz <luiz.zk@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luizdesign/algorithms/issues"
+  },
+  "homepage": "https://github.com/luizdesign/algorithms#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
