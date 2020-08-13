@@ -12,7 +12,6 @@ const results: PerfResult[] = [];
 let sortedList: number[] = [];
 
 
-
 const loggerInsertion = new Log(false);
 loggerInsertion.start(numberList, 'Ordering the list');
 sortedList = sortAlgorithms.insertion.sort(numberList);
@@ -37,6 +36,15 @@ sortedList = sortAlgorithms.merge.sort(numberList);
 results.push({
   algorithmType: 'mergesort',
   elapsedTime: loggerMerge.finish(sortedList),
+});
+
+
+const loggerShell = new Log(false);
+loggerShell.start(numberList, 'Ordering the list');
+sortedList = sortAlgorithms.shell.sort(numberList);
+results.push({
+  algorithmType: 'shellsort',
+  elapsedTime: loggerShell.finish(sortedList),
 });
 
 

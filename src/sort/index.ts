@@ -3,6 +3,7 @@ import SelectionSort from './selection';
 import BubbleSort from './bubble';
 import QuickSort from './quick';
 import MergeSort from './merge';
+import ShellSort from './shell';
 
 export default {
   insertion: InsertionSort,
@@ -10,4 +11,5 @@ export default {
   bubble: BubbleSort,
   quick: QuickSort,
   merge: MergeSort,
+  shell: ShellSort,
 };
