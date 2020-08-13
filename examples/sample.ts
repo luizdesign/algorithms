@@ -3,7 +3,7 @@ export default class Sample {
     const sample: number[] = [];
 
     for (let i = 0; i < limit; i ++) {
-      sample.push(Math.floor(Math.random() * limit));
+      sample.push(Math.round(Math.random() * limit));
     }
 
     return sample;
