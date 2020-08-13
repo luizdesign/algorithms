@@ -8,30 +8,44 @@ type PerfResult = {
 };
 
 const numberList: number[] = Sample.create(100000);
-const logger = new Log(false);
 const results: PerfResult[] = [];
-
-logger.start(numberList, 'Ordering the list');
-let sortedList: number[] = sortAlgorithms.bubble.sort(numberList);
-results.push({
-  algorithmType: 'bubble',
-  elapsedTime: logger.finish(sortedList),
-});
+let sortedList: number[] = [];
 
 
-logger.start(numberList, 'Ordering the list');
+
+const loggerInsertion = new Log(false);
+loggerInsertion.start(numberList, 'Ordering the list');
 sortedList = sortAlgorithms.insertion.sort(numberList);
 results.push({
   algorithmType: 'insertion',
-  elapsedTime: logger.finish(sortedList),
+  elapsedTime: loggerInsertion.finish(sortedList),
 });
 
 
-logger.start(numberList, 'Ordering the list');
+const loggerQuickSort = new Log(false);
+loggerQuickSort.start(numberList, 'Ordering the list');
+sortedList = sortAlgorithms.quick.sort(numberList);
+results.push({
+  algorithmType: 'quicksort',
+  elapsedTime: loggerQuickSort.finish(sortedList),
+});
+
+
+const loggerSelection = new Log(false);
+loggerSelection.start(numberList, 'Ordering the list');
 sortedList = sortAlgorithms.selection.sort(numberList);
 results.push({
   algorithmType: 'selection',
-  elapsedTime: logger.finish(sortedList),
+  elapsedTime: loggerSelection.finish(sortedList),
+});
+
+
+const loggerBubble = new Log(false);
+loggerBubble.start(numberList, 'Ordering the list');
+sortedList = sortAlgorithms.bubble.sort(numberList);
+results.push({
+  algorithmType: 'bubble',
+  elapsedTime: loggerBubble.finish(sortedList),
 });
 
 
