@@ -31,6 +31,15 @@ results.push({
 });
 
 
+const loggerMerge = new Log(false);
+loggerMerge.start(numberList, 'Ordering the list');
+sortedList = sortAlgorithms.merge.sort(numberList);
+results.push({
+  algorithmType: 'mergesort',
+  elapsedTime: loggerMerge.finish(sortedList),
+});
+
+
 const loggerSelection = new Log(false);
 loggerSelection.start(numberList, 'Ordering the list');
 sortedList = sortAlgorithms.selection.sort(numberList);
