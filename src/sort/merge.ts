@@ -1,5 +1,12 @@
+/**
+ * Merge Sort Algorithm
+ */
 export default class MergeSort {
-  static sort(list: number[]): number[] {
+  /**
+   * Static Sort method
+   * @param {Array} list - Array of numbers to sort
+   */
+  static sort(list: number[]) {
     const listLength = list.length;
 
     if (listLength < 2) {
@@ -17,11 +24,16 @@ export default class MergeSort {
   }
 }
 
+/**
+ * Merge lists
+ * @param leftList
+ * @param rightList
+ */
 const merge = (
   leftList: number[],
   rightList: number[]
 ) => {
-  const result = [];
+  const newList = [];
   const leftListLength = leftList.length;
   const rightListLength = rightList.length;
 
@@ -29,15 +41,16 @@ const merge = (
   let rightIndex = 0;
 
   while (leftIndex < leftListLength && rightIndex < rightListLength) {
-      if (leftList[leftIndex] < rightList[rightIndex]) {
-          result.push(leftList[leftIndex]);
-          leftIndex ++;
-      } else {
-          result.push(rightList[rightIndex]);
-          rightIndex ++;
-      }
+    if (leftList[leftIndex] < rightList[rightIndex]) {
+      newList.push(leftList[leftIndex]);
+      leftIndex ++;
+    } else {
+      newList.push(rightList[rightIndex]);
+      rightIndex ++;
+    }
   }
-  return result
+
+  return newList
     .concat(
       leftList.slice(leftIndex)
     )

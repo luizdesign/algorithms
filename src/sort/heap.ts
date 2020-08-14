@@ -1,31 +1,44 @@
+/**
+ * Heap Sort Algorithm
+ */
 export default class HeapSort {
+  /**
+   * Static Sort method
+   * @param {Array} list - Array of numbers to sort
+   */
   static sort(list: number[]) {
     const listLength = list.length;
-    let i = Math.floor(listLength / 2 - 1);
-    let k = listLength - 1;
+    let leftPivot = Math.floor(listLength / 2 - 1);
+    let rightPivot = listLength - 1;
 
-    while (i >= 0) {
-      heapify(list, listLength, i);
-      i --;
+    while (leftPivot >= 0) {
+      heapify(list, listLength, leftPivot);
+      leftPivot --;
     }
 
-    while (k >= 0) {
-      [list[0], list[k]] = [list[k], list[0]];
-      heapify(list, k, 0);
-      k --;
+    while (rightPivot >= 0) {
+      [list[0], list[rightPivot]] = [list[rightPivot], list[0]];
+      heapify(list, rightPivot, 0);
+      rightPivot --;
     }
 
     return list;
   }
 }
 
+/**
+ * Create a Binary tree representation
+ * @param {Array} list - Array of numbers
+ * @param {Number} limit - Array length
+ * @param {Number} pivot - Pivot index
+ */
 const heapify = (
-  list,
-  limit,
-  i
+  list: number[],
+  limit: number,
+  pivot: number,
 ) => {
-  let largest = i;
-  let left = i * 2 + 1;
+  let largest = pivot;
+  let left = pivot * 2 + 1;
   let right = left + 1;
 
   if (left < limit && list[left] > list[largest]) {
@@ -36,8 +49,8 @@ const heapify = (
     largest = right;
   }
 
-  if (largest !== i) {
-    [list[i], list[largest]] = [list[largest], list[i]];
+  if (largest !== pivot) {
+    [list[pivot], list[largest]] = [list[largest], list[pivot]];
     heapify(list, limit, largest);
   }
 

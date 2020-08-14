@@ -1,4 +1,11 @@
+/**
+ * Bubble Sort Algorithm
+ */
 export default class BubbleSort {
+  /**
+   * Static Sort method
+   * @param {Array} list - Array of numbers to sort
+   */
   static sort(list: number[]) {
     let listLength = list.length;
 

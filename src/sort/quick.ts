@@ -1,4 +1,11 @@
+/**
+ * Quick Sort Algorithm
+ */
 export default class QuickSort {
+  /**
+   * Static Sort method
+   * @param {Array} list - Array of numbers to sort
+   */
   static sort(
     list: number[],
     left?: number,
@@ -46,7 +53,7 @@ const swap = (
 }
 
 /**
- * Swap the position of 2 values in a list
+ * Find the correct position in a list to swap
  * @param {Array<Number>} list - list of numbers that will be swap value positions
  * @param {Number} leftIndex - left index to swap to the right index
  * @param {Number} rightIndex - right index to swap to the left index
