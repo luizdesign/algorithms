@@ -18,7 +18,7 @@ export default class QuickSort {
     }
 
     if (right === undefined) {
-      right = list.length;
+      right = list.length - 1;
     }
 
     if (list.length > 1) {

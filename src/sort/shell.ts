@@ -15,7 +15,7 @@ export default class ShellSort {
 
         let auxIndex;
         for (auxIndex = index; auxIndex >= gap && list[auxIndex-gap] > temp; auxIndex -= gap) {
-          list[auxIndex] = list[auxIndex-gap];
+          list[auxIndex] = list[auxIndex - gap];
         }
 
         list[auxIndex] = temp;

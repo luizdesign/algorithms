@@ -4,7 +4,7 @@
   "description": "Implementation of various algorithms with typescript to study",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx jest --verbose --coverage"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,13 @@
   "homepage": "https://github.com/luizdesign/algorithms#readme",
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.9",
     "@types/node": "^14.0.27",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.0",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   }
