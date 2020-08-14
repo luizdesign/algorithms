@@ -5,6 +5,7 @@ import QuickSort from './quick';
 import MergeSort from './merge';
 import ShellSort from './shell';
 import RadixSort from './radix';
+import HeapSort from './heap';
 
 export default {
   insertion: InsertionSort,
@@ -14,4 +15,5 @@ export default {
   merge: MergeSort,
   shell: ShellSort,
   radix: RadixSort,
+  heap: HeapSort,
 };

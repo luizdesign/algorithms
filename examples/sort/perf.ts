@@ -7,9 +7,18 @@ type PerfResult = {
   elapsedTime: number;
 };
 
-const numberList: number[] = Sample.create(50000);
+const numberList: number[] = Sample.create(100000);
 const results: PerfResult[] = [];
 let sortedList: number[] = [];
+
+
+const loggerQuickSort = new Log(false);
+loggerQuickSort.start(numberList, 'Ordering the list');
+sortedList = sortAlgorithms.quick.sort(JSON.parse(JSON.stringify(numberList)));
+results.push({
+  algorithmType: 'quicksort',
+  elapsedTime: loggerQuickSort.finish(sortedList),
+});
 
 
 const loggerRdix = new Log(false);
@@ -21,21 +30,12 @@ results.push({
 });
 
 
-const loggerInsertion = new Log(false);
-loggerInsertion.start(numberList, 'Ordering the list');
-sortedList = sortAlgorithms.insertion.sort(JSON.parse(JSON.stringify(numberList)));
+const loggerHeap = new Log(false);
+loggerHeap.start(numberList, 'Ordering the list');
+sortedList = sortAlgorithms.heap.sort(JSON.parse(JSON.stringify(numberList)));
 results.push({
-  algorithmType: 'insertion',
-  elapsedTime: loggerInsertion.finish(sortedList),
-});
-
-
-const loggerQuickSort = new Log(false);
-loggerQuickSort.start(numberList, 'Ordering the list');
-sortedList = sortAlgorithms.quick.sort(JSON.parse(JSON.stringify(numberList)));
-results.push({
-  algorithmType: 'quicksort',
-  elapsedTime: loggerQuickSort.finish(sortedList),
+  algorithmType: 'heapsort',
+  elapsedTime: loggerHeap.finish(sortedList),
 });
 
 
@@ -54,6 +54,15 @@ sortedList = sortAlgorithms.shell.sort(JSON.parse(JSON.stringify(numberList)));
 results.push({
   algorithmType: 'shellsort',
   elapsedTime: loggerShell.finish(sortedList),
+});
+
+
+const loggerInsertion = new Log(false);
+loggerInsertion.start(numberList, 'Ordering the list');
+sortedList = sortAlgorithms.insertion.sort(JSON.parse(JSON.stringify(numberList)));
+results.push({
+  algorithmType: 'insertion',
+  elapsedTime: loggerInsertion.finish(sortedList),
 });
 
 
