@@ -24,7 +24,7 @@ TODO
 ***Example:*** [./examples/sort/insertion.ts](https://github.com/luizdesign/algorithms/blob/master/examples/sort/insertion.ts)
 
 **Representação visual do algoritimo**
-*(clique para assistir no youtube)*
+<br/>*(clique para assistir no youtube)*<br/>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ROalU379l3U
 " target="_blank"><img src="http://img.youtube.com/vi/ROalU379l3U/0.jpg"
 alt="Representação visual do algoritimo Insertion sort representado por um grupo de dança" width="360" /></a>
@@ -44,7 +44,7 @@ alt="Representação visual do algoritimo Insertion sort representado por um gru
 ***Example:*** [./examples/sort/selection.ts](https://github.com/luizdesign/algorithms/blob/master/examples/sort/selection.ts)
 
 **Representação visual do algoritimo**
-*(clique para assistir no youtube)*
+<br/>*(clique para assistir no youtube)*<br/>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Ns4TPTC8whw
 " target="_blank"><img src="http://img.youtube.com/vi/Ns4TPTC8whw/0.jpg"
 alt="Representação visual do algoritimo selection sort representado por um grupo de dança" width="360" /></a>
@@ -64,7 +64,7 @@ alt="Representação visual do algoritimo selection sort representado por um gru
 ***Example:*** [./examples/sort/bubble.ts](https://github.com/luizdesign/algorithms/blob/master/examples/sort/bubble.ts)
 
 **Representação visual do algoritimo**
-*(clique para assistir no youtube)*
+<br/>*(clique para assistir no youtube)*<br/>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=lyZQPjUT5B4
 " target="_blank"><img src="http://img.youtube.com/vi/lyZQPjUT5B4/0.jpg"
 alt="Representação visual do algoritimo Bubble sort representado por um grupo de dança" width="360" /></a>
@@ -83,7 +83,7 @@ alt="Representação visual do algoritimo Bubble sort representado por um grupo 
 ***Example:*** [./examples/sort/quicksort.ts](https://github.com/luizdesign/algorithms/blob/master/examples/sort/quicksort.ts)
 
 **Representação visual do algoritimo**
-*(clique para assistir no youtube)*
+<br/>*(clique para assistir no youtube)*<br/>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ywWBy6J5gz8
 " target="_blank"><img src="http://img.youtube.com/vi/ywWBy6J5gz8/0.jpg"
 alt="Representação visual do algoritimo Quick sort representado por um grupo de dança" width="360" /></a>
@@ -103,7 +103,7 @@ alt="Representação visual do algoritimo Quick sort representado por um grupo d
 ***Example:*** [./examples/sort/merge.ts](https://github.com/luizdesign/algorithms/blob/master/examples/sort/merge.ts)
 
 **Representação visual do algoritimo**
-*(clique para assistir no youtube)*
+<br/>*(clique para assistir no youtube)*<br/>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=XaqR3G_NVoo
 " target="_blank"><img src="http://img.youtube.com/vi/XaqR3G_NVoo/0.jpg"
 alt="Representação visual do algoritimo Merge sort representado por um grupo de dança" width="360" /></a>
@@ -122,7 +122,7 @@ alt="Representação visual do algoritimo Merge sort representado por um grupo d
 ***Example:*** [./examples/sort/heap.ts](https://github.com/luizdesign/algorithms/blob/master/examples/sort/heap.ts)
 
 **Representação visual do algoritimo**
-*(clique para assistir no youtube)*
+<br/>*(clique para assistir no youtube)*<br/>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Xw2D9aJRBY4
 " target="_blank"><img src="http://img.youtube.com/vi/Xw2D9aJRBY4/0.jpg"
 alt="Representação visual do algoritimo Heap sort representado por um grupo de dança" width="360" /></a>
@@ -146,7 +146,7 @@ alt="Representação visual do algoritimo Heap sort representado por um grupo de
 ***Example:*** [./examples/sort/radix.ts](https://github.com/luizdesign/algorithms/blob/master/examples/sort/radix.ts)
 
 **Representação visual do algoritimo**
-*(clique para assistir no youtube)*
+<br/>*(clique para assistir no youtube)*<br/>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ibtN8rY7V5k
 " target="_blank"><img src="http://img.youtube.com/vi/ibtN8rY7V5k/0.jpg"
 alt="Representação visual do algoritimo Radix sort representado por um grupo de dança" width="360" /></a>
@@ -165,7 +165,7 @@ alt="Representação visual do algoritimo Radix sort representado por um grupo d
 ***Example:*** [./examples/sort/shell.ts](https://github.com/luizdesign/algorithms/blob/master/examples/sort/shell.ts)
 
 **Representação visual do algoritimo**
-*(clique para assistir no youtube)*
+<br/>*(clique para assistir no youtube)*<br/>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=CmPA7zE8mx0
 " target="_blank"><img src="http://img.youtube.com/vi/CmPA7zE8mx0/0.jpg"
 alt="Representação visual do algoritimo Shell sort representado por um grupo de dança" width="360" /></a>
