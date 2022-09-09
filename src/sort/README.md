@@ -26,6 +26,8 @@ npm run perf:sort -- --sampleSize 1000
 ## Insertion Sort
 ***Ideia:*** Algoritmo linear que percorre a lista (Array), da esquerda para direita, a partir do segundo registro, analisando cada registro e reposicionando ele para a ordem correta quando necessário.
 
+***Performance:*** O(n)
+
 ***Imprementação:*** [./src/sort/insertion.ts](/src/sort/insertion.ts)
 
 ***Example:*** [./examples/sort/insertion.ts](/examples/sort/insertion.ts)
@@ -50,7 +52,7 @@ alt="Representação visual do algoritimo Insertion sort representado por um gru
 ## Selection Sort
 ***Ideia:*** Algoritimo que percorre a lista (Array) procurando o menor valor e reposiciona ele em primeiro. Na sequencia procura os segundo menor, depois o terceiro, até reposicionar a lista por completo.
 
-***Performance:*** O(log n)
+***Performance:*** O(n2)
 
 ***Imprementação:*** [./src/sort/selection.ts](/src/sort/selection.ts)
 
@@ -156,7 +158,6 @@ alt="Representação visual do algoritimo Heap sort representado por um grupo de
 1. criar clusters de listas com base no numero de itens na lista: para uma lista de 10 itens sera um cluster de listas de 0 a 9;
 2. Normalizar o tamanho dos valores igualando o numero de caracteres. Uma lista de [500, 1, 10, 2] vira [500, 001, 010, 002]
 3. Ordenar olhando caracter por caracter da direita para a esquerda. Para [500, 001, 010, 002] será clusterizado olhando 0, 1, 0, 2, na sequencia 0, 0, 1, 1 e por ultimo 5, 0, 0, 0.
-
 
 ***Imprementação:*** [./src/sort/radix.ts](https://github.com/luizdesign/algorithms/blob/master/src/sort/radix.ts)
 

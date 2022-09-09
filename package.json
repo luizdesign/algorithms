@@ -4,7 +4,10 @@
   "description": "Implementation of various algorithms with typescript to study",
   "main": "build/index.js",
   "scripts": {
-    "test": "npx jest --verbose --coverage"
+    "test": "npx jest --verbose --coverage",
+    "build": "npx tsc -p tsconfig.json",
+    "example:sort:selection": "npm run build && node dist/examples/sort/selection.js",
+    "perf:sort": "npm run build && node dist/examples/sort/perf.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +23,9 @@
     "url": "https://github.com/luizdesign/algorithms/issues"
   },
   "homepage": "https://github.com/luizdesign/algorithms#readme",
-  "dependencies": {},
+  "dependencies": {
+    "shell-arguments": "^1.2.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",

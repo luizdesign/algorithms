@@ -15,9 +15,9 @@ export default class Log {
     this.starttime = now.getTime();
 
     if (this.showLogs) {
-      process.stdout.write(`Entry list: ${list}\n`);
-      process.stdout.write(`${message}\n`);
-      process.stdout.write(`Start process at ${now.toISOString()}\n`);
+      this.log(`Entry list with "${list}" items`);
+      this.log(message);
+      this.log(`Start process at ${now.toISOString()}`);
     }
   }
 
@@ -26,11 +26,15 @@ export default class Log {
     const elapsed = now.getTime() - this.starttime;
 
     if (this.showLogs) {
-      process.stdout.write(`Output list: ${outputList}\n`);
-      process.stdout.write(`Finish process at ${now.toISOString()}\n`);
-      process.stdout.write(`Elapsed time: ${elapsed}\n`);
+      this.log(`Output list: ${outputList}`);
+      this.log(`Finish process at ${now.toISOString()}`);
+      this.log(`Elapsed time: ${elapsed}`);
     }
 
     return elapsed;
+  }
+
+  log(message: string) {
+    process.stdout.write(`${message}\n`);
   }
 }

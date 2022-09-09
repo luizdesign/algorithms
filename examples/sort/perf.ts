@@ -1,3 +1,4 @@
+import args from 'shell-arguments';
 import sortAlgorithms from '../../src/sort';
 import Log from '../log';
 import Sample from '../sample';
@@ -7,7 +8,13 @@ type PerfResult = {
   elapsedTime: number;
 };
 
-const numberList: number[] = Sample.create(100000);
+const sampleSize = args.sampleSize || 100000;
+const perfLogger = new Log();
+perfLogger.log(`Preparing a sample with ${sampleSize} items`);
+const numberList: number[] = Sample.create(sampleSize);
+perfLogger.log('Sample created');
+perfLogger.log('Starting the Performance test');
+
 const results: PerfResult[] = [];
 let sortedList: number[] = [];
 
@@ -84,5 +91,7 @@ results.push({
 });
 
 
+perfLogger.log('Finished the Performance test');
+perfLogger.log('Preparing the result');
 const perfList = results.sort((a, b) => a.elapsedTime - b.elapsedTime);
 console.table(perfList);
