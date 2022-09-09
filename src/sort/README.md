@@ -14,14 +14,25 @@ Abaixo segue um pouco sobre os alguns dos principais algoritimos de ordenação:
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## Performance test
-TODO
+Roda todos os algoritimos de ordenação para uma amostra de itens e apresenta o tempo de decorrido em milisegundos para cada.
+
+***Importante:*** Se nenhum sampleSize for definido, por default a mostra será de 100.000 items.
+
+Para rodar o teste:
+```sh
+npm run perf:sort -- --sampleSize 1000
+```
 
 ## Insertion Sort
 ***Ideia:*** Algoritmo linear que percorre a lista (Array), da esquerda para direita, a partir do segundo registro, analisando cada registro e reposicionando ele para a ordem correta quando necessário.
 
-***Imprementação:*** [./src/sort/insertion.ts](https://github.com/luizdesign/algorithms/blob/master/src/sort/insertion.ts)
+***Imprementação:*** [./src/sort/insertion.ts](/src/sort/insertion.ts)
 
-***Example:*** [./examples/sort/insertion.ts](https://github.com/luizdesign/algorithms/blob/master/examples/sort/insertion.ts)
+***Example:*** [./examples/sort/insertion.ts](/examples/sort/insertion.ts)
+
+```sh
+npm run example:sort:insertion -- --sampleSize 1000
+```
 
 **Representação visual do algoritimo**
 <br/>*(clique para assistir no youtube)*<br/>
@@ -39,9 +50,15 @@ alt="Representação visual do algoritimo Insertion sort representado por um gru
 ## Selection Sort
 ***Ideia:*** Algoritimo que percorre a lista (Array) procurando o menor valor e reposiciona ele em primeiro. Na sequencia procura os segundo menor, depois o terceiro, até reposicionar a lista por completo.
 
-***Imprementação:*** [./src/sort/selection.ts](https://github.com/luizdesign/algorithms/blob/master/src/sort/selection.ts)
+***Performance:*** O(log n)
 
-***Example:*** [./examples/sort/selection.ts](https://github.com/luizdesign/algorithms/blob/master/examples/sort/selection.ts)
+***Imprementação:*** [./src/sort/selection.ts](/src/sort/selection.ts)
+
+***Example:*** [./examples/sort/selection.ts](/examples/sort/selection.ts)
+
+```sh
+npm run example:sort:selection
+```
 
 **Representação visual do algoritimo**
 <br/>*(clique para assistir no youtube)*<br/>
